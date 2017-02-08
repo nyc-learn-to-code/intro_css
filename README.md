@@ -39,6 +39,12 @@
 
 ## Objectives
 
+| Objectives |
+| :--- |
+| Describe and play with CSS rules and selectors. |
+| Discuss and utilize introductory concepts for the box model. |
+| Discuss and utilize some of the import/media queries. |
+
 ## Vocabulary
 
 * **Tag**: The HTML markup representing the start or end of part of a document.
