@@ -557,7 +557,7 @@ Absolute positioning is used to position an element relative to the first non-st
 
 [Live Example](https://jsbin.com/lekawaxehu/edit?html,css,output)
 
-** Absolute positioning not leaving blank space**
+**Absolute positioning not leaving blank space**
 
 [Live Example](https://jsbin.com/rulorapidu/1/edit?html,css,output)
 
