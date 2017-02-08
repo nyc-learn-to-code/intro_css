@@ -505,7 +505,7 @@ Other styles include `dashed`, `dotted`, `groove`, `inset`, and `outset`.
 
 Padding follows the same rules as the margin except it's key is `padding`. It controls the amount of space between the content area and the border.
 
-![Live Example](https://jsbin.com/tisugudopo/edit?html,css,output)
+[Live Example](https://jsbin.com/tisugudopo/edit?html,css,output)
 
 ### Zeroing
 
@@ -555,18 +555,18 @@ Absolute positioning is used to position an element relative to the first non-st
 
 **Relative Positioning leaving an odd blank space**
 
-![Live Example](https://jsbin.com/lekawaxehu/edit?html,css,output)
+[Live Example](https://jsbin.com/lekawaxehu/edit?html,css,output)
 
 ** Absolute positioning not leaving blank space**
 
-![Live Example](https://jsbin.com/rulorapidu/1/edit?html,css,output)
+[Live Example](https://jsbin.com/rulorapidu/1/edit?html,css,output)
 
 
 ### Fixed
 
 Fix sticks an element to a specified position.
 
-![Live Example](https://jsbin.com/yeqefokeva/1/edit?html,css,output)
+[Live Example](https://jsbin.com/yeqefokeva/1/edit?html,css,output)
 
 ### Exercises
 
