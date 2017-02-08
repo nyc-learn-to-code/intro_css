@@ -25,17 +25,15 @@
   * [Zeroing](#zeroing)
   * [Exercises](#exercises)
 - [Positioning](#positioning)
-  * [Static (default)](#static-default)
+  * [Static (default](#static-default)
   * [Relative](#relative)
   * [Absolute](#absolute)
   * [Fixed](#fixed)
+  * [Exercises](#exercises-1)
 - [Cascade](#cascade)
   * [Multiple Classes](#multiple-classes)
 - [Media Queries](#media-queries)
-  * [Viewport](#viewport)
 - [Import Google Fonts](#import-google-fonts)
-- [Float](#float)
-  * [Clearfix](#clearfix)
 
 <!-- tocstop -->
 
