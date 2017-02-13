@@ -538,7 +538,7 @@ We've thrown in it in a few times already. But when you want to set a property t
 * Add an `h2` in your `content` element. Give it some fake text and a solid black bottom border 10 pixels wide.
 * Add two of the following paragraphs to your `content` element. Give each paragraph a bottom margin of 20 pixels.
 
-  ```
+  ```html
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in dictum nisi, at placerat massa. Proin lacinia consequat nulla at fermentum. Quisque at augue nec lectus tincidunt suscipit. Suspendisse sodales est nulla, a tristique libero vehicula ac. Aliquam nec felis sollicitudin felis viverra varius. Vivamus tincidunt, metus at maximus faucibus, velit nisl tempus libero, quis feugiat augue nisi nec ex. Nullam mattis ante efficitur nisl venenatis ultricies. Aenean venenatis, ex vel elementum sollicitudin, magna nisl rhoncus diam, eget viverra arcu sem sed nunc. Aenean nec ante ultricies nisl tempor condimentum. Vestibulum et justo quam. Nunc lacinia auctor neque, vitae porta metus sollicitudin id. In hac habitasse platea dictumst. Suspendisse eget velit elit.
     </p>
@@ -585,7 +585,7 @@ Absolute positioning is used to position an element relative to the first non-st
 
 Fix sticks an element to a specified position.
 
-[Live Example](https://jsbin.com/wejosaduqo/1/edit?html,css,output)
+[Live Example](https://jsbin.com/siwiyanoxi/edit?html,css,output)
 
 ### Exercises
 
