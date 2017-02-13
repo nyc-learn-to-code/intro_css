@@ -49,19 +49,20 @@
 
 * **Tag**: The HTML markup representing the start or end of part of a document.
 
-	* The `head` tag is used to denote the start/end of the meta-data of the document: `<head>` and `</head>`.
-	* A `body` tag is used to denote the start/end of the content of a document: `<body>` and `</body>`.
+  * The `head` tag is used to denote the start/end of the meta-data of the document: `<head>` and `</head>`.
+  * A `body` tag is used to denote the start/end of the content of a document: `<body>` and `</body>`.
 * **Tag Attribute** or **Attribute**: a key and value pair provided on a starting **tag** to extend its definition with meta-data.
-	* A common attribute added to a starting `tag` is `class` used to help clarify the semantic purpose of a tag.
-		* Help describe the purpose of a paragraph:
-			```html
-				<p class="comment">Hello World</p>
-			```
+  * A common attribute added to a starting `tag` is `class` used to help clarify the semantic purpose of a tag.
+    * Help describe the purpose of a paragraph:
+
+      ```html
+      <p class="comment">Hello World</p>
+      ```
 * **Element**: the start and end tags with the content between them make up an entire element.
 
-	```html
-		<div class="quote">Hello world</div>
-	```		
+  ```html
+  <div class="quote">Hello world</div>
+  ```		
 
 * **DOM**: All elements defined in HTML are represented as objects in memory with a collection of attributes and behavior that are initially nested according to the provided HTML file and rooted in a single document object that is drawn on the page. The document can define links to CSS and JS that in utilize the document to select and define properties on various elements that affect appearance or behavior of elements in the HTML. Effectively, the DOM is the current state of the document elements after CSS and JS changes have been applied.
   * Example: Go to the Chrome developer console
@@ -78,14 +79,14 @@ Let's add a bit of style to our HTML. Let say we have something like the followi
 ```html
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Example</title>
-	</head>
-	<body>
-		<p class="greeting">Hello!</p>
-		<p class="message">Use the power of CSS.</p>
-		<p class="urgent">Color me red.</p>
-	</body>
+  <head>
+  <title>Example</title>
+  </head>
+  <body>
+    <p class="greeting">Hello!</p>
+    <p class="message">Use the power of CSS.</p>
+    <p class="urgent">Color me red.</p>
+  </body>
 </html>
 ```
 
@@ -116,8 +117,8 @@ If you are selecting a specific element by an `id` attribute then you prefix usi
 
 ```html
 <div id="blog-errors">
-	<p>Missing title.</p>
-	<p>Post body cannot be empty.</p>
+  <p>Missing title.</p>
+  <p>Post body cannot be empty.</p>
 </div>
 ```
 
@@ -132,14 +133,14 @@ div#blog-errors {
 
 * How do you select the following:
 
-	```html
-		<section class="blog-content"></section>
-	```
+  ```html
+  <section class="blog-content"></section>
+  ```
 * How do you select the following:
 
-	```html
-		<p id="blog-tags">styling, css, declarations, css-rules</p>
-	```
+  ```html
+  <p id="blog-tags">styling, css, declarations, css-rules</p>
+  ```
 
 ### Simple Declarations
 
@@ -148,14 +149,14 @@ Now that we know how to use simple selectors we add simple declarations to chang
 ```html
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Example</title>
-	</head>
-	<body>
-		<p class="greeting">Hello!</p>
-		<p class="message">Use the power of CSS.</p>
-		<p class="urgent">Color me red.</p>
-	</body>
+  <head>
+  <title>Example</title>
+  </head>
+  <body>
+    <p class="greeting">Hello!</p>
+    <p class="message">Use the power of CSS.</p>
+    <p class="urgent">Color me red.</p>
+  </body>
 </html>
 ```
 
@@ -182,8 +183,8 @@ Let's add declarations for the `greeting` that makes it bold and twice and large
 
 ```css
 p.greeting {
-	font-weight: bold;
-	font-size: 200%;
+  font-weight: bold;
+  font-size: 200%;
 }
 ```
 
@@ -193,8 +194,8 @@ Let's change the message to have a gray background and white colored text.
 
 ```css
 p.messsage {
-	background-color: gray;
-	color: white;
+  background-color: gray;
+  color: white;
 }
 ```  
 
@@ -204,11 +205,11 @@ Let's change the `urgent` paragraph to have a width and height of `300px` with a
 
 ```css
 p.urgent {
-	border-style: solid;
-	border-width: 1px;
-	border-color: red;
-	width: 300px;
-	height: 300px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
+  width: 300px;
+  height: 300px;
 }
 ```
 
@@ -216,9 +217,9 @@ This is a good example of how the `border` can be defined. However, we can actua
 
 ```css
 p.urgent {
-	border: solid 1px red;
-	width: 300px;
-	height: 300px;
+  border: solid 1px red;
+  width: 300px;
+  height: 300px;
 }
 ```
 
@@ -226,19 +227,19 @@ We defined have the following CSS rules.
 
 ```css
 p.greeting {
-	font-weight: bold;
-	font-size: 200%;
+  font-weight: bold;
+  font-size: 200%;
 }
 
 p.messsage {
-	background-color: gray;
-	color: white;
+  background-color: gray;
+  color: white;
 }
 
 p.urgent {
-	border: solid 1px red;
-	width: 300px;
-	height: 300px;
+  border: solid 1px red;
+  width: 300px;
+  height: 300px;
 }
 ```
 
@@ -250,23 +251,23 @@ You can add your CSS rules in on of two main ways. You can add **internal** CSS 
 
 ```html
 <head>
-	<style>
-		p.greeting {
-			font-weight: bold;
-			font-size: 200%;
-		}
+  <style>
+    p.greeting {
+    font-weight: bold;
+    font-size: 200%;
+    }
 
-		p.messsage {
-			background-color: gray;
-			color: white;
-		}
+    p.messsage {
+    background-color: gray;
+    color: white;
+    }
 
-		p.urgent {
-			border: solid 1px red;
-			width: 300px;
-			height: 300px;
-		}
-	</style>
+    p.urgent {
+    border: solid 1px red;
+    width: 300px;
+    height: 300px;
+    }
+  </style>
 </head>
 ...
 ```
@@ -277,19 +278,19 @@ You can add your CSS rules in on of two main ways. You can add **internal** CSS 
 
 ```css
 p.greeting {
-	font-weight: bold;
-	font-size: 200%;
+  font-weight: bold;
+  font-size: 200%;
 }
 
 p.messsage {
-	background-color: gray;
-	color: white;
+  background-color: gray;
+  color: white;
 }
 
 p.urgent {
-	border: solid 1px red;
-	width: 300px;
-	height: 300px;
+  border: solid 1px red;
+  width: 300px;
+  height: 300px;
 }
 ```
 
@@ -297,7 +298,7 @@ Add the external stylesheet link in your `head`.
 
 ```html
 <head>
-	<link href="your_style.css" rel="stylesheet">
+  <link href="your_style.css" rel="stylesheet">
 </head>
 ```
 
@@ -306,16 +307,16 @@ Add the external stylesheet link in your `head`.
 * Try creating a new project in your editor of choice. You can most easily do this by creating a folder on your desktop and dragging it to your editor.
 * Create an `index.html` file in your project with the following HTML.
 
-	```html
-	<!DOCTYPE html>
-	<head>
-	</head>
-	<body>
-		<div class="box">
-			Hello world
-		</div>
-	</body>
-	```
+  ```html
+  <!DOCTYPE html>
+  <head>
+  </head>
+  <body>
+    <div class="box">
+      Hello world
+    </div>
+  </body>
+  ```
 * Add an internal CSS Rule to add `width`, `height`, and a `border` to the the `box` class.
 * Add an external CSS Rule to add a `background-color` and `color`.
 
@@ -494,7 +495,6 @@ You can separately set the `left`, `right`, `top`, and `bottom` properties of th
 The `auto` margin will just add the default margin for the element. Browsers have different defaults built in for various elements: `h1`, `div`, etc.
 
 > Note: **horizontal* refers to `left` and `right`.  **Vertical** refers to `top` and `bottom`.
-
 
 #### Horizontal Centering
 
