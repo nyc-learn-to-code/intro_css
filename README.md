@@ -140,6 +140,7 @@ div#blog-errors {
 	```html
 		<p id="blog-tags">styling, css, declarations, css-rules</p>
 	```
+
 ### Simple Declarations
 
 Now that we know how to use simple selectors we add simple declarations to change the properties of the selected elements.
@@ -300,6 +301,24 @@ Add the external stylesheet link in your `head`.
 </head>
 ```
 
+### Exercises
+
+* Try creating a new project in your editor of choice. You can most easily do this by creating a folder on your desktop and dragging it to your editor.
+* Create an `index.html` file in your project with the following HTML.
+
+	```html
+	<!DOCTYPE html>
+	<head>
+	</head>
+	<body>
+		<div class="box">
+			Hello world
+		</div>
+	</body>
+	```
+* Add an internal CSS Rule to add `width`, `height`, and a `border` to the the `box` class.
+* Add an external CSS Rule to add a `background-color` and `color`.
+
 ## The Box Model
 
 The box model is classic way of handling spacing for elements using CSS. It has it's quirks, but we can quickly get a handle on them and make beautiful content.
@@ -343,13 +362,13 @@ html, body {
 }
 ```
 
-[Live Example](https://jsbin.com/ruxixowayi/1/edit?html,css,output)
+[Live Example](https://jsbin.com/foxihevisa/edit?html,css,output)
 
 #### Pixel
 
 A more explicit way to measure a box is in pixel widths. You may have a series of panels you want fixed to have dimensions (fine if it's in a responsive container).
 
-```
+```css
 .panel {
   display: inline-block;
   width: 100px;
@@ -358,7 +377,7 @@ A more explicit way to measure a box is in pixel widths. You may have a series o
 }
 ```
 
-[Live Example](https://jsbin.com/mewomanona/1/edit?html,css,output)
+[Live Example](https://jsbin.com/seyosanepe/edit?html,css,output)
 
 ##### Max-Height/Width
 
@@ -373,8 +392,7 @@ Sometimes you might only care about the max height of an element. This gives you
   background-color: blue;
 }
 ```
-
-[Live Example](https://jsbin.com/qosuturali/1/edit?html,css,output)
+[Live Example](https://jsbin.com/xamoyoduti/edit?html,css,output)
 
 Note how the edge of the box stopped at the specified height, but the content visibly overflowed.
 
@@ -389,7 +407,7 @@ Note how the edge of the box stopped at the specified height, but the content vi
 }
 ```
 
-[Live Example](https://jsbin.com/befapisome/1/edit?html,css,output)
+[Live Example](https://jsbin.com/qosuturali/1/edit?html,css,output)
 
 ### Height Percents
 
@@ -428,7 +446,9 @@ Given the above CSS, if we now place the box in a `div` that doesn't have a spec
 
 This is because the `div` has `height: auto` and any percent of `height: auto` is computed to `height: auto`.
 
-[Live Example](https://jsbin.com/naxivakido/1/edit?html,css,output)
+* [Live Example](https://jsbin.com/xofubuledu/edit?html,css,output)
+
+* [Example without the div](https://jsbin.com/naxivakido/1/edit?html,css,output)
 
 You'll have trouble with height and vertical sizing/positioning in CSS, but with more experience you'll be able to tackle these problems for particular tasks.
 
@@ -518,12 +538,11 @@ We've thrown in it in a few times already. But when you want to set a property t
 * Add an `h2` in your `content` element. Give it some fake text and a solid black bottom border 10 pixels wide.
 * Add two of the following paragraphs to your `content` element. Give each paragraph a bottom margin of 20 pixels.
 
-  ```
+  ```html
     <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in dictum nisi, at placerat massa. Proin lacinia consequat nulla at fermentum. Quisque at augue nec lectus tincidunt suscipit. Suspendisse sodales est nulla, a tristique libero vehicula ac. Aliquam nec felis sollicitudin felis viverra varius. Vivamus tincidunt, metus at maximus faucibus, velit nisl tempus libero, quis feugiat augue nisi nec ex. Nullam mattis ante efficitur nisl venenatis ultricies. Aenean venenatis, ex vel elementum sollicitudin, magna nisl rhoncus diam, eget viverra arcu sem sed nunc. Aenean nec ante ultricies nisl tempor condimentum. Vestibulum et justo quam. Nunc lacinia auctor neque, vitae porta metus sollicitudin id. In hac habitasse platea dictumst. Suspendisse eget velit elit.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in dictum nisi, at placerat massa. Proin lacinia consequat nulla at fermentum. Quisque at augue nec lectus tincidunt suscipit. Suspendisse sodales est nulla, a tristique libero vehicula ac. Aliquam nec felis sollicitudin felis viverra varius. Vivamus tincidunt, metus at maximus faucibus, velit nisl tempus libero, quis feugiat augue nisi nec ex. Nullam mattis ante efficitur nisl venenatis ultricies. Aenean venenatis, ex vel elementum sollicitudin, magna nisl rhoncus diam, eget viverra arcu sem sed nunc. Aenean nec ante ultricies nisl tempor condimentum. Vestibulum et justo quam. Nunc lacinia auctor neque, vitae porta metus sollicitudin id. In hac habitasse platea dictumst. Suspendisse eget velit elit.
     </p>
   ```
-*
 
 ## Positioning
 
@@ -559,14 +578,14 @@ Absolute positioning is used to position an element relative to the first non-st
 
 **Absolute positioning not leaving blank space**
 
-[Live Example](https://jsbin.com/rulorapidu/1/edit?html,css,output)
+[Live Example](https://jsbin.com/jedokapoxa/edit?html,css,output)
 
 
 ### Fixed
 
 Fix sticks an element to a specified position.
 
-[Live Example](https://jsbin.com/yeqefokeva/1/edit?html,css,output)
+[Live Example](https://jsbin.com/siwiyanoxi/edit?html,css,output)
 
 ### Exercises
 
