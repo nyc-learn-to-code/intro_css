@@ -47,29 +47,22 @@
 
 ## Vocabulary
 
-* **Tag**: The HTML markup representing the start or end of part of a document.
 
-  * The `head` tag is used to denote the start/end of the meta-data of the document: `<head>` and `</head>`.
-  * A `body` tag is used to denote the start/end of the content of a document: `<body>` and `</body>`.
-* **Tag Attribute** or **Attribute**: a key and value pair provided on a starting **tag** to extend its definition with meta-data.
-  * A common attribute added to a starting `tag` is `class` used to help clarify the semantic purpose of a tag.
-    * Help describe the purpose of a paragraph:
+| Term  |  Definition | Example(s) |
+| :--- | :--- | :--- |
+| **TAG** | HTML annotations representing start or end of some kind of content. | A `body` tag is used to denote the start/end of the content of a document: `<body>` and `</body>`. |
+| **TAG ATTRIBUTE** | A property name and value pair provided on a starting **tag** to extend its definition with meta-data. |  `<p class="comment">Hello World</p> `|
+| **ELEMENT** | A pair of tags and content between them make up an entire element. | `<div class="quote">Hello world</div>` |
+|  **DOM** | The DOM is an API for reading and changing the current state of all elements via CSS and JS. | Go to eBay's site and try the following in the Chrome console.<br/><br/>  `document.querySelector('div#mainContent').style.background = "red";` |
 
-      ```html
-      <p class="comment">Hello World</p>
-      ```
-* **Element**: the start and end tags with the content between them make up an entire element.
 
-  ```html
-  <div class="quote">Hello world</div>
-  ```		
+### Exercise
 
-* **DOM**: All elements defined in HTML are represented as objects in memory with a collection of attributes and behavior that are initially nested according to the provided HTML file and rooted in a single document object that is drawn on the page. The document can define links to CSS and JS that in utilize the document to select and define properties on various elements that affect appearance or behavior of elements in the HTML. Effectively, the DOM is the current state of the document elements after CSS and JS changes have been applied.
-  * Example: Go to the Chrome developer console
+* Identify the different parts of the following:
 
-    ```javascript
-    document.querySelector('div#mainContent').style.background = "red";
-    ```
+  ```
+  <p class="greeting" id="bar">Welcome!</p>
+  ```
 
 
 ## CSS Basics
@@ -243,7 +236,7 @@ p.urgent {
 }
 ```
 
-## Adding CSS
+## Linking CSS
 
 You can add your CSS rules in on of two main ways. You can add **internal** CSS rules using `style` tags or you can an **external** stylesheet using a `link` tag.
 
